@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Finding Wally",
+  "version": "1.0",
+  "description": "Hides Wally randomly into the text on your page. Find him!",
+  "icons": {
+    "16": "images/wall.jpg",
+    "32": "images/wall.jpg",
+    "48": "images/wall.jpg",
+    "128": "images/wall.jpg"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://support.microsoft.com/en-us/office/*"
+      ]
+    }
+  ]
+}
